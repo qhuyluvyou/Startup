@@ -1,14 +1,1 @@
-sudo apt update && sudo apt upgrade -y && \
-sudo apt install -y ufw screen openjdk-21-jdk xdotool && \
-curl -fsSL https://tailscale.com/install.sh | sh && \
-sudo systemctl unmask tailscaled && sudo systemctl start tailscaled && \
-sudo tailscale up --login-server https://early-certain-walrus.ngrok-free.app --auth-key=5087899917683a91beb627cd83936bde6f7a174f914759bb && \
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing' && \
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0 && \
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing' && \
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 0 && \
-gsettings set org.gnome.desktop.session idle-delay 0 && \
-sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target && \
-sudo ln -sf /dev/null /sbin/shutdown && \
-sudo ln -sf /dev/null /sbin/poweroff && \
-sudo ln -sf /dev/null /sbin/reboot
+sudo apt update && sudo apt upgrade -y && sudo apt install tree screen ufw openjdk-17-jdk wget git curl nano vim && mkdir Server && cd Server && wget https://api.papermc.io/v2/projects/paper/versions/1.20.4/builds/499/downloads/paper-1.20.4-499.jar && touch eula.txt && echo "eula=true" >> eula.txt && git clone https://github.com/qhuyluvyou/Plugins.git plugins/ && touch start.sh && echo "java -Xms50G -Xmx50G -jar paper-1.20.4-499.jar --nogui" >> start.sh && echo "alias start='bash ~/Server/start.sh'" >> ~/.bashrc && source ~/.bashrc && sudo update-alternatives --config java
