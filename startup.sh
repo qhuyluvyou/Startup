@@ -19,8 +19,8 @@ echo "java -Xms50G -Xmx50G -jar paper.jar --nogui" >> startup.sh
 chmod +x startup.sh
 echo "alias qhuy='bash ~/Main/startup.sh'" >> ~/.bashrc
 
-wget https://api.papermc.io/v2/projects/paper/versions/1.19.4/builds/550/downloads/paper-1.19.4-550.jar
-cp paper-1.19.4-550.jar paper.jar
+wget https://api.papermc.io/v2/projects/paper/versions/1.19.3/builds/448/downloads/paper-1.19.3-448.jar
+cp paper-1.19.3-448.jar paper.jar
 
 source ~/.bashrc
 
@@ -35,6 +35,8 @@ cd ~/Main
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
 
 unzip spawn.zip
+sleep 5
 
 cd ~/Main
+source ~/.bashrc
 echo "done :3, start server with command 'qhuy'"
