@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install screen nano curl git wget openjdk-17-jdk
+sudo apt install screen nano curl git wget openjdk-17-jdk p7zip-full
 
 curl -sSL https://raw.githubusercontent.com/qhuyluvyou/Startup/refs/heads/main/ngrok.sh | bash
 
@@ -26,8 +26,9 @@ source ~/.bashrc
 cd ~/Hyr
 wget https://drive.google.com/uc?export=download&id=1WvkNAQ6n5KABzcqan0IJ5oQ_CPgLOzcT
 
-unzip HYRONIC*.zip
-cp -rf Hyr*/* ~/Main/
+unzip HYR*.zip
+cd Hyr*
+cp * ~/Main/.
 
 cd ~/Main
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
