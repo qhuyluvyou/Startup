@@ -30,4 +30,4 @@ unzip HYRONIC*.zip
 cp -rf Hyr*/* ~/Main/
 
 cd ~/Main
-sudo update-alternatives --config java
+sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
