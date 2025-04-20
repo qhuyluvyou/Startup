@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install screen nano curl git wget openjdk-17-jdk
+sudo apt install screen nano curl git wget openjdk-17-jdk openssh-client openssh-server mysql-client mysql-server
 
 curl -sSL https://raw.githubusercontent.com/qhuyluvyou/Startup/refs/heads/main/ngrok.sh | bash
 
