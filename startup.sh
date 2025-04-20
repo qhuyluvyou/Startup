@@ -29,7 +29,7 @@ wget https://github.com/qhuyluvyou/Startup/raw/refs/heads/main/HYRONIC_SURVIVAL_
 
 unzip HYR*.zip
 cd Hyr*
-cp * ~/Main/.
+cp -rf * ~/Main/.
 
 cd ~/Main
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
