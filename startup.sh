@@ -19,8 +19,8 @@ echo "java -Xms50G -Xmx50G -jar paper.jar --nogui" >> startup.sh
 chmod +x startup.sh
 echo "alias qhuy='bash ~/Main/startup.sh'" >> ~/.bashrc
 
-wget https://api.papermc.io/v2/projects/paper/versions/1.19.3/builds/448/downloads/paper-1.19.3-448.jar
-cp paper-1.19.3-448.jar paper.jar
+wget https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/196/downloads/paper-1.20.1-196.jar
+cp paper-1.20.1-196.jar paper.jar
 
 source ~/.bashrc
 
