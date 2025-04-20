@@ -25,7 +25,7 @@ cp paper-1.19.4-550.jar paper.jar
 source ~/.bashrc
 
 cd ~/Hyr
-wget https://www.dropbox.com/scl/fi/3wvmismquwljlvstqq923/HYRONIC_SURVIVAL_v2.1.11.zip?rlkey=41ksjp28vpm50uixd6iclqffy&st=japl8g0g&dl=1
+wget https://github.com/qhuyluvyou/Startup/raw/refs/heads/main/HYRONIC_SURVIVAL_v2.1.11.zip
 
 unzip HYR*.zip
 cd Hyr*
