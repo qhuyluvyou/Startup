@@ -31,3 +31,7 @@ cp -rf Hyr*/* ~/Main/
 
 cd ~/Main
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+
+unzip spawn.zip
+
+echo "done :3, start server with command 'qhuy'"
