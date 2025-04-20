@@ -1,7 +1,8 @@
 #!/bin/bash
+set -e
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install screen nano curl git wget openjdk-17-jdk p7zip-full
+sudo apt install -y screen nano curl git wget openjdk-17-jdk p7zip-full
 
 curl -sSL https://raw.githubusercontent.com/qhuyluvyou/Startup/refs/heads/main/ngrok.sh | bash
 
