@@ -34,4 +34,9 @@ sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
 
 unzip spawn.zip
 
+cd ~/Main
+cd plugins
+rm -rf worldguard* WorldGuard*
+cd -
+sleep 5
 echo "done :3, start server with command 'qhuy'"
